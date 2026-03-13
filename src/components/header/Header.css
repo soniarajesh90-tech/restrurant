@@ -1,0 +1,110 @@
+.header{
+   background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    color: black;
+}
+
+
+
+.nav,
+.nav-buttons
+{
+    display: flex;
+    align-items: center;
+    
+}
+.nav{
+    justify-content: space-between;
+    height: 5rem;
+    column-gap: 4.75rem;
+     
+
+
+}
+.nav-logo-img{
+    width: 170px;
+}
+
+
+.nav-list{
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.nav-link,
+.nav-toggler{
+    color: var(--white-color);
+}
+
+.nav-link{
+    font-size: 1.06rem;
+    text-transform: capitalize;
+    position: relative;
+    transition: color 0.5s ;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -0.75rem;
+    width: 0;
+    height: 3px;
+    background-color: var(--first-color);
+    border-radius: 1rem;
+    transition: width 0.5s;
+   
+}
+
+
+
+.nav-toggler{
+    font-size: 1.75rem;
+}
+.nav-link:hover{
+    color: var(--first-color);
+}
+.nav-link:hover::before{
+    width: 15px;
+
+}
+
+.nav-menu{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+   
+}
+
+.show-menu{
+  top: 80px;
+  
+}
+.cart-icon{
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.cart-count{
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+.cart-symbol{
+  font-size: 22px;
+  color: white;
+}
