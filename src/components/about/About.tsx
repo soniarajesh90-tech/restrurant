@@ -29,14 +29,9 @@ const About = () => {
       
         <div className='about-content'>
           <SectionTitle
-          subtitle={'About us'}
-          title={
-            <>
-            We Are Always <span>Here To Serve </span> You Fresh Food
-            </>
-            
-          }
-       />
+           subtitle={'About us'}
+           title={'We Are Always Here To Serve You Fresh Food'}
+         />
 
        <p className='about-description'>
         There are many variations of passages available but the majority have suffered alteration in some form by injected humour randomised words look even. Many desktop packages and web page editors now their default model text.

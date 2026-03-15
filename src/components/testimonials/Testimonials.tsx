@@ -5,62 +5,55 @@ import SectionTitle from "../title/SectionTitle";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+ import "swiper/css"; 
 
-import "swiper/css";
-
-const Testimonial = () => {
+function Testimonial() {
   return (
     <section id="testimonials">
       <div className="testimonial-section">
         <SectionTitle
-        subtitle="Customer Reviews"
-        title={
-          <>
-            What Our <span>Customers</span> Say
-          </>
-        }
-      />
-       
-      <Swiper
-        modules={[Autoplay]}
-        spaceBetween={30}
-        slidesPerView={3}
-        autoplay={{ delay: 2500 }}
-        loop={true}
-        className="testimonial-container"
-      >
+          subtitle="Customer Reviews"
+          title="What Our Customers Say" />
 
-        {testimonialItem.map((item, index) => (
-          <SwiperSlide key={index}>
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={30}
+          slidesPerView={3}
+          autoplay={{ delay: 2500 }}
+          loop={true}
+          className="testimonial-container"
+        >
 
-            <div className="testimonial-card">
+          {testimonialItem.map((item, index) => (
+            <SwiperSlide key={index}>
 
-              <img
-                src={item.img}
-                alt={item.name}
-                className="testimonial-img"
-              />
+              <div className="testimonial-card">
 
-              <h3 className="testimonial-name">{item.name}</h3>
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="testimonial-img" />
 
-              <p className="testimonial-desc">
-                {item.description}
-              </p>
+                <h3 className="testimonial-name">{item.name}</h3>
 
-              <div className="testimonial-stars">
-                <FaStar />
-                <span>{item.stars}</span>
+                <p className="testimonial-desc">
+                  {item.description}
+                </p>
+
+                <div className="testimonial-stars">
+                  <FaStar />
+                  <span>{item.stars}</span>
+                </div>
+
               </div>
 
-            </div>
+            </SwiperSlide>
+          ))}
 
-          </SwiperSlide>
-        ))}
-
-      </Swiper>
-          </div>
+        </Swiper>
+      </div>
     </section>
   );
-};
+}
 
 export default Testimonial;

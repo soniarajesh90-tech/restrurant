@@ -36,11 +36,7 @@ const Menu = ({ setCartCount }: any) => {
 
           <SectionTitle
             subtitle="Our Menu"
-            title={
-              <>
-                Let's check <span>Our Menu</span>
-              </>
-            }
+            title="Let's check Our Menu"
           />
 
           <ul className="menu-list">

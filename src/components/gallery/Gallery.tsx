@@ -10,11 +10,7 @@ const Gallery = () => {
       <div className="gallery-head">
       <SectionTitle
         subtitle="Our Photo Gallery"
-        title={
-          <>
-            Let's check <span>Our Photo</span> Gallery
-          </>
-        }
+        title="Let's check Our Photo Gallery"
       />
 
       <div className="gallery-container">

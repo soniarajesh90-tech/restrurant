@@ -1,17 +1,21 @@
-import { ReactNode } from "react";
 
-type Props = {
-  subtitle: ReactNode;
-  title: ReactNode;
-};
 
-const SectionTitle = ({ subtitle, title }: Props) => {
-  return (
-    <div className="section-title">
-      <span>{subtitle}</span>
-      <h2>{title}</h2>
-    </div>
-  );
-};
 
+import './SectionTitle.css';
+
+interface SectionTitleProps {
+    subtitle: string;
+    title: string;
+}
+
+const SectionTitle = ({ subtitle, title }: SectionTitleProps) => {
+
+    return(
+
+        <div className="section-header">
+            <span className="section-subtitle">{subtitle}</span>
+        <h2 className="section-title">{title}</h2>
+        </div>
+    )
+}
 export default SectionTitle;
