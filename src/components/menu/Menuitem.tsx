@@ -6,7 +6,7 @@ type MenuItemType = {
   title: string;
   price: number;
   img: string;
-  desc: string;
+  description: string;
 };
 
 const Menuitem = ({
@@ -42,7 +42,7 @@ const Menuitem = ({
   return (
     <>
       {menuItems.map((item) => {
-        const { id, title, price, img, desc } = item;
+        const { id, title, price, img, description } = item;
         const qty = cart[id] || 0;
 
         return (
@@ -51,7 +51,7 @@ const Menuitem = ({
 
             <div className="menu-item-content">
               <h3>{title}</h3>
-              <p>{desc}</p>
+              <p>{description}</p>
 
               <div className="menu-item-footer">
                 <span className="menu-price">₹{price}</span>

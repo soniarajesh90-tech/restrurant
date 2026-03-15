@@ -3,10 +3,6 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import { homeSlide } from '../../Data';
 import ScrollLink from '../link/ScrollLink';
 import { FaCircleArrowRight, FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
-
-
-
-
 import './Home.css';
 import parse from 'html-react-parser';
 

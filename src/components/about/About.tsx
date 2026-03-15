@@ -4,8 +4,7 @@ import aboutImg2 from '../../assets/images/about-2.jpg'
 import dataImg1 from '../../assets/images/quality.svg'
 import dataImg2 from '../../assets/images/delicious.svg'
 
-import ScrollLink from '../link/ScrollLink'
-import { FaCircleArrowRight } from 'react-icons/fa6'
+
 import SectionTitle from '../title/SectionTitle.tsx'
 
 import './About.css'
