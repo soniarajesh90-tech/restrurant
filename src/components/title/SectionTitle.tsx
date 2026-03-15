@@ -1,9 +1,8 @@
-import './SectionTitle.css'
-
+import { ReactNode } from "react";
 
 type Props = {
-  subtitle: string;
-  title: string;
+  subtitle: ReactNode;
+  title: ReactNode;
 };
 
 const SectionTitle = ({ subtitle, title }: Props) => {

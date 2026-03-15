@@ -29,7 +29,7 @@ const About = () => {
       
         <div className='about-content'>
           <SectionTitle
-          subtitle='About us'
+          subtitle={'About us'}
           title={
             <>
             We Are Always <span>Here To Serve </span> You Fresh Food
