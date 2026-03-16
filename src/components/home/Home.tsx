@@ -5,6 +5,8 @@ import ScrollLink from '../link/ScrollLink';
 import { FaCircleArrowRight, FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 import './Home.css';
 import parse from 'html-react-parser';
+import 'swiper/swiper.css';
+ 
 
 const Home = () => {
   return (
