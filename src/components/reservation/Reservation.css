@@ -15,6 +15,15 @@
   width: 100%;
   max-width: 500px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  
+  
+}
+@media (max-width:768px){
+
+.reservation-container{
+flex-direction:column;
+}
+
 }
 
 .reservation-title {

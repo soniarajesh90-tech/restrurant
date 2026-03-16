@@ -1,8 +1,8 @@
 .about-section{
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   background :linear-gradient(rgb(198, 232, 198),white);
-  padding: 80px 0;
+  padding: 60px 20px;
 }
 
 /* container only layout */
